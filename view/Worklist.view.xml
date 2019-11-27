@@ -1,0 +1,135 @@
+<mvc:View controllerName="com.colsubsidio.syncpanel.syncpanel.controller.Worklist" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" height="100%">
+	<Page title="Panel de sincronizacion - Dipensación de medicamentos" class="sapUiContentPadding">
+		<headerContent>
+			<Button icon="sap-icon://arrow-right" tooltip="Share" text="Ir a CAJA" press="onGoPaymentboxSync"/>
+		</headerContent>
+		<subHeader>
+			<!--<OverflowToolbar>-->
+			<!--	<SearchField />-->
+			<!--</OverflowToolbar>-->
+		</subHeader>
+		<content>
+			<TileContainer id="container" tileDelete="handleTileDelete" tiles="{/TileCollection}">
+				<StandardTile icon="{icon}" type="{type}" number="{number}" numberUnit="{numberUnit}" title="{title}" press="onEvent" info="{info}"
+					infoState="{infoState}" busyIndicatorDelay="0" />
+			</TileContainer>
+		</content>
+		<footer>
+			<!--<OverflowToolbar>-->
+			<!--	<ToolbarSpacer/>-->
+			<!--	<Button text="Accept" type="Accept" />-->
+			<!--	<Button text="Reject" type="Reject" />-->
+			<!--	<Button text="Edit" />-->
+			<!--	<Button text="Delete" />-->
+			<!--</OverflowToolbar>-->
+		</footer>
+	</Page>
+</mvc:View>
+<!--<mvc:View controllerName="com.colsubsidio.syncpanel.syncpanel.controller.Worklist" -->
+<!--	xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml">-->
+
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Causales Externos"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://offsite-work" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Constantes ERP"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://database" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Contratos Marco"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://decision" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Convenios Centro / IPS"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://decision" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Conversores EPS"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://database" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Cuotas Moderadoras EPS"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://database" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Carga EPS´s"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://database" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Homologacion EPS / IPS"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://database" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Farmacias"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://accidental-leave" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="IPS / Convenio"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://database" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Medicamentos EPS / Convenio"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://database" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Medicamentos Stock"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://product" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Motivos Pendiente"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://database" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Sincronizar Pedido"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://customer-order-entry" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Tablas Maestras"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://customize" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+<!--	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Topes Moléculas"-->
+<!--		subheader="Carga de datos" press="press">-->
+<!--		<TileContent unit="" footer="Dispensación">-->
+<!--			<ImageContent src="sap-icon://database" />-->
+<!--		</TileContent>-->
+<!--	</GenericTile>-->
+<!--</mvc:View>-->

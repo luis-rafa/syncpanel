@@ -1,0 +1,39 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.colsubsidio.syncpanel.syncpanel.controller.paymentboxSync" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Panel de sincronizacion - Caja"
+		class="sapUiContentPadding" showNavButton="true" navButtonPress="onBack">
+		<headerContent>
+			<!--<Button icon="sap-icon://action" tooltip="Share"/>-->
+		</headerContent>
+		<subHeader>
+			<!--<OverflowToolbar>-->
+			<!--	<SearchField />-->
+			<!--</OverflowToolbar>-->
+		</subHeader>
+		<content>
+			<TileContainer
+			id="tilescaja"
+			tileDelete="handleTileDelete"
+			tiles="{/TileCollection}">
+			<StandardTile
+				icon="{icon}"
+				type="{type}"
+				number="{number}"
+				numberUnit="{numberUnit}"
+				title="{title}"
+				press="onDemo"
+				info="{info}"
+				infoState="{infoState}" />
+			</TileContainer>
+		</content>
+		<footer>
+			<!--<OverflowToolbar>-->
+			<!--	<ToolbarSpacer/>-->
+			<!--	<Button text="Accept" type="Accept" />-->
+			<!--	<Button text="Reject" type="Reject" />-->
+			<!--	<Button text="Edit" />-->
+			<!--	<Button text="Delete" />-->
+			<!--</OverflowToolbar>-->
+		</footer>
+	</Page>
+</mvc:View>
