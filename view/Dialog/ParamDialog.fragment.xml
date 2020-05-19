@@ -1,0 +1,66 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<Dialog id="ParamDialog" title="Hello {/recipient/name}">
+		<customHeader>
+			<Bar>
+				<contentLeft>
+					<Button/>
+				</contentLeft>
+				<contentMiddle>
+					<Title text="Parametros de sincronización"/>
+				</contentMiddle>
+			</Bar>
+		</customHeader>
+		<content>
+			<form:Form id="frm-Reclamante" editable="true" visible="true" class="sapUiResponsiveMargin">
+				<!--<form:title>-->
+				<!--<core:Title text="Formula 505050 - Pedido 4050505" level="Auto"/>-->
+				<!--<core:Title text="Fórmula {oFormula>/formula/nroFormula} - Pedido {oFormula>/nroPedido}" level="Auto"/>-->
+				<!--</form:title>-->
+				<form:formContainers id="contentForm">
+					<form:FormContainer id="feObjects" visible="true">
+					
+							<!--<form:FormElement id="fre-TipoDoc" visible="true">-->
+							<!--	<form:label>-->
+							<!--		<Label text="Tipo de documento" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+							<!--	</form:label>-->
+							<!--	<form:fields>-->
+							<!--		<ComboBox id="cbo-TipoDoc" selectedKey="{oFormula>/formula/tipoNitPersonaRecoge}" selectionChange="_checkTypeDoc" editable="true"-->
+							<!--			enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%" items="{path: '/TipoDocumentoReceptors'}">-->
+							<!--			<items>-->
+							<!--				<core:Item text="{TipoDocumentoDescripcion}" enabled="true" key="{TipoDocumentoCodigo}"/>-->
+							<!--			</items>-->
+							<!--			<layoutData>-->
+							<!--				<l:GridData span="XL6 L6 M6 S12"/>-->
+							<!--			</layoutData>-->
+							<!--		</ComboBox>-->
+							<!--	</form:fields>-->
+							<!--</form:FormElement>-->
+							<!--<form:FormElement id="fre-NroDoc" visible="true">-->
+							<!--	<form:label>-->
+							<!--		<Label text="Número de documento" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+							<!--	</form:label>-->
+							<!--	<form:fields>-->
+							<!--		<Input id="ipt-NroDoc" type="Text" value="{oFormula>/formula/nitPersonaRecoge}" liveChange="_checkNumDoc" showValueHelp="false"-->
+							<!--			enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0">-->
+							<!--			<layoutData>-->
+							<!--				<l:GridData span="XL6 L6 M6 S12"/>-->
+							<!--			</layoutData>-->
+							<!--		</Input>-->
+							<!--	</form:fields>-->
+							<!--</form:FormElement>-->
+					</form:FormContainer>
+				</form:formContainers>
+				<form:layout>
+					<form:ResponsiveGridLayout adjustLabelSpan="false" columnsXL="1" labelSpanXL="5" columnsL="1" labelSpanL="5" columnsM="1" labelSpanM="4"
+						labelSpanS="12"/>
+				</form:layout>
+			</form:Form>
+		</content>
+		<beginButton>
+			<Button text="OK" press="onSync" icon="sap-icon://accept" type="Accept"/>
+		</beginButton>
+		<endButton>
+			<Button text="Cancelar" press="onClose" icon="sap-icon://accept" type="Reject"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

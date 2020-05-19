@@ -1,0 +1,66 @@
+{
+  "routes": [
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/colsubsidio-app/",
+      "target": {
+        "type": "destination",
+        "name": "CONTAINER"
+      },
+      "description": "Java SCP Application"
+    },
+    {
+      "path": "/colsubsidiojob-app/",
+      "target": {
+        "type": "destination",
+        "name": "CONTAINER_SYNC"
+      },
+      "description": "Java SCP Application"
+    },
+    {
+      "path": "/sapcaja-app/",
+      "target": {
+        "type": "destination",
+        "name": "SAPCAJASERVICE_SYNC"
+      },
+      "description": "Java SCP Application Caja"
+    }
+  ],
+  "welcomeFile": "/test/flpSandbox.html",
+  "sendWelcomeFileRedirect": true
+}
